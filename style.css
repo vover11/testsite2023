@@ -14,7 +14,7 @@
 }
 
 @media screen and (max-width: 992px) {
-    .main{
+    .main {
         margin-left: 20px;
         margin-right: 20px;
 
@@ -22,20 +22,20 @@
 }
 
 
-.container{
+.container {
     width: 100%;
     height: auto;
 }
 
-.profile_container{
+.profile_container {
     display: flex;
 }
 
-.profile_info{
+.profile_info {
     width: 195px;
     height: 43px;
     background-color: #0F0F0F;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 /* .profile_nick{
@@ -49,7 +49,7 @@
     margin-top: 70px;
 }
 
-.hero_content{
+.hero_content {
     width: auto;
     height: auto;
     display: flex;
@@ -67,7 +67,7 @@
 }
 
 
-.hero_banner{
+.hero_banner {
     width: 70%;
     height: 440px;
     background: linear-gradient(90deg, #1A2444, #D43F8D);
@@ -83,7 +83,7 @@
     }
 }
 
-.hero_options{
+.hero_options {
     width: 30%;
     height: 440px;
     background: transparent;
@@ -99,14 +99,14 @@
     }
 }
 
-.subscription{
+.subscription {
     width: 100%;
     height: 100%;
     background: linear-gradient(45deg, #43E97B, #38F9D7);
     border-radius: 30px;
 }
 
-.workhard{
+.workhard {
     width: 100%;
     height: 100%;
     border-radius: 30px;
@@ -124,7 +124,14 @@
     flex-wrap: wrap;
 }
 
-.hero_chapter{
+@media screen and (max-width: 992px) {
+    .hero_chapters {
+        justify-content: center;
+
+    }
+}
+
+.hero_chapter {
     width: 452px;
     height: 192px;
     border-radius: 30px;
@@ -140,45 +147,45 @@
 
 
 
-.game_chapter{
+.game_chapter {
     background: linear-gradient(45deg, #6A11CB, #2575FC);
 }
 
-.shop_coin{
+.shop_coin {
     background-color: #CD3F8E;
 
 }
 
-.shop_prize{
+.shop_prize {
     background-color: whitesmoke;
 
 }
 
-.hero_socials{
+.hero_socials {
     width: auto;
     height: 192px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     gap: 10px;
-    
+
 }
 
-.socials_telegram{
+.socials_telegram {
     width: 292px;
     height: 50%;
     background-color: #159FFA;
     border-radius: 30px;
 }
 
-.socials_wallet{
+.socials_wallet {
     width: 292px;
     height: 50%;
     background-color: snow;
     border-radius: 30px;
 }
 
-.chapter_container{
+.chapter_container {
     width: auto;
     height: auto;
     display: flex;
@@ -186,23 +193,23 @@
     gap: 10px;
 }
 
-.chapter_button{
+.chapter_button {
     width: 338px;
     height: 59px;
     background-color: #E0FE83;
     border-radius: 100px;
 }
 
-.games{
+.games {
     margin-top: 70px;
 }
 
-.games_container{
+.games_container {
     width: auto;
     height: auto;
 }
 
-.game_cards{
+.game_cards {
     width: auto;
     height: auto;
     display: flex;
@@ -247,21 +254,61 @@
 .game_name {
     font-size: 40px;
     background: linear-gradient(45deg, #434343, #000000);
-    -webkit-background-clip: text; /* Для Safari и браузеров на основе Webkit */
-    color: transparent; /* Делает текст невидимым, так как мы используем градиент на фоне */
+    -webkit-background-clip: text;
+    /* Для Safari и браузеров на основе Webkit */
+    color: transparent;
+    
 }
 
-.game_options{
+.game_options {
     cursor: pointer;
 }
 
-.image_play{
-
-}
+.image_play {}
 
 @media screen and (max-width: 992px) {
-    .image_play{
+    .image_play {
         width: 26px;
         height: 30px;
+    }
+}
+
+
+nav {
+    background-color: #203064;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.icon {
+    display: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: none;
+        margin-bottom: 20px;
+    }
+
+    nav a {
+        float: none;
+        width: 100%;
+        text-align: left;
+    }
+
+    .icon {
+        display: block;
+        margin: 20px 0px;
     }
 }

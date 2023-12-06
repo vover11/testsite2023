@@ -37,7 +37,7 @@
 .profile_container {
     display: flex;
     gap: 5px;
-    margin-top: 54px;
+    margin-top: 74px;
 }
 
 .profile_info {
@@ -333,7 +333,7 @@
 
 .navbar {
     background-color: #203064;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -379,11 +379,11 @@
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 50px;
+        top: 75px;
         left: 0;
         width: 100%;
         background-color: #203064;
-        border-radius: 15px;
+        border-radius: 10px;
         transition: background-color 0.3s ease;
         filter: opacity(90%); /* Добавим фильтр прозрачности */
     }

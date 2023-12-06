@@ -3,14 +3,16 @@
     margin: 0px;
     border: 0px;
     font-family: 'Rubik Mono One';
+    font-family: 'Exo 2';
+    box-sizing: border-box;
 }
 
 
 .main {
     background: linear-gradient(-45deg, #203064, #4876FF);
     background-repeat: no-repeat;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 @media screen and (max-width: 992px) {
@@ -35,6 +37,7 @@
 .profile_container {
     display: flex;
     gap: 5px;
+    margin-top: 54px;
 }
 
 .profile_info {
@@ -86,7 +89,30 @@
     height: 440px;
     background: linear-gradient(90deg, #1A2444, #D43F8D);
     border-radius: 30px;
+    padding: 20px;
+    position: relative;
 
+}
+
+.hero_text {
+    font-size: 60px;
+    color: white;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 992px) {
+    .hero_text {
+        margin-top: 0px;
+        font-size: 25px;
+
+    }
+}
+
+.hero_button{
+    position: absolute;
+    font-size: xx-large;
+    right: 20px;
+    bottom: 20px;
 }
 
 @media screen and (max-width: 992px) {
@@ -295,8 +321,13 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
-    margin-bottom: 10px;
-}
+    position: fixed;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
 
 
 .toggle-button {
@@ -322,6 +353,7 @@
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+    text-transform: lowercase;
 }
 
 /* Медиа-запрос для мобильных устройств */
@@ -334,6 +366,9 @@
         left: 0;
         width: 100%;
         background-color: #203064;
+        border-radius: 15px;
+        transition: background-color 0.3s ease;
+        filter: opacity(90%); /* Добавим фильтр прозрачности */
     }
 
     .nav-list.show {
@@ -344,10 +379,10 @@
         margin-right: 0;
         text-align: center;
         padding: 10px;
-        border-bottom: 1px solid #555;
+        /* border-bottom: 1px solid #555; */
     }
 
-    
+
 }
 
 .icon {
@@ -356,7 +391,7 @@
     margin-right: 10px;
 }
 
-.logo{
+.logo {
     color: white;
     margin-left: 10px;
 }
@@ -366,5 +401,27 @@
         display: none;
     }
 
-    
+
+}
+
+.category {
+    margin-top: 120px;
+}
+
+.category_text {
+    color: white;
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    .category_text {
+        display: flex;
+        justify-content: center;
+        border: 2px solid white;
+        border-radius: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
 }

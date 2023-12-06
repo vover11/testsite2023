@@ -7,7 +7,8 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Rubik+Glitch&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Rubik+Glitch&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet">
 
     <title>Rubi</title>
 </head>
@@ -25,7 +26,7 @@
     <div class="navbar">
         <div class="logo">RUBIGAMES</div>
         <button class="icon" class="toggle-button" onclick="toggleNav()">
-            &#9776; 
+            &#9776;
         </button>
         <ul class="nav-list" id="navList">
             <li><a href="#">О нас</a></li>
@@ -59,7 +60,7 @@
                         c друзьями
                     </div>
                     <button class="hero_button">
-                        &#10549; 
+                        <img src="images/arrow-next.svg" alt="" srcset="">
                     </button>
 
                 </div>
@@ -69,12 +70,14 @@
                             Играй бесплатно
                         </div>
                         <button class="hero_button">
-                            &#10549; 
+                            <img src="images/arrow-next.svg" alt="" srcset="">
                         </button>
                     </div>
                     <div class="workhard">
                         <div class="subscription_text">
-                            Приглашай
+                            Приглашай друзей<br>
+                            повышый рейтинг<br>
+                            и получай бонусы  
                         </div>
                     </div>
                 </div>
@@ -109,26 +112,46 @@
         <div class="container">
             <div class="games_container">
                 <div class="game_cards">
-                    <div class="game_card tetris">
-                        <div class="game_image">
-                            <!-- <img src="images/tetris.png" alt=""> -->
-                        </div>
-                        <!-- <div class="game_name">TETRIS
-                            <img class="card_star" src="images/star.png" alt="" srcset="">
-                        </div> -->
-                        <div class="game_options">
-                            <img class="image_play" src="images/play.png" alt="" srcset="">
+                    <div class="game_card tetris" onclick="toggleCard(this)">
+                        <div class="card_container">
+                            <div class="card_face front_face">
+                                <div class="game_image">
+                                    <img src="images/tetris.png" alt="">
+                                </div>
+                                <div class="game_name">TETRIS
+                                    <img class="card_star" src="images/star.png" alt="">
+                                </div>
+                                <div class="game_options">
+                                    <img class="image_play" src="images/play.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card_face back_face">
+                                <div class="back_face_buttons">
+                                    <button id="play_button" class="back_face_button">play</button>
+                                    <button id="demo_button" class="back_face_button">demo</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="game_card tetris">
-                        <div class="game_image">
-                            <!-- <img src="images/tetris.png" alt=""> -->
-                        </div>
-                        <!-- <div class="game_name">TETRIS
-                            <img class="card_star" src="images/star.png" alt="" srcset="">
-                        </div> -->
-                        <div class="game_options">
-                            <img class="image_play" src="images/play.png" alt="" srcset="">
+                    <div class="game_card snake" onclick="toggleCard(this)">
+                        <div class="card_container">
+                            <div class="card_face front_face">
+                                <div class="game_image">
+                                    <img src="images/tetris.png" alt="">
+                                </div>
+                                <div class="game_name">TETRIS
+                                    <img class="card_star" src="images/star.png" alt="">
+                                </div>
+                                <div class="game_options">
+                                    <img class="image_play" src="images/play.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card_face back_face">
+                                <div class="back_face_buttons">
+                                    <button id="play_button" class="back_face_button">play</button>
+                                    <button id="demo_button" class="back_face_button">demo</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -140,6 +163,12 @@
     function toggleNav() {
         var navList = document.getElementById('navList');
         navList.classList.toggle('show');
+    }
+</script>
+
+<script>
+    function toggleCard(element) {
+        element.classList.toggle('clicked');
     }
 </script>
 

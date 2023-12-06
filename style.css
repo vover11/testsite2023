@@ -11,17 +11,17 @@
 .main {
     background: linear-gradient(-45deg, #203064, #4876FF);
     background-repeat: no-repeat;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 600px) {
     .main {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
 
     }
-}
+} */
 
 .logo {
     font-family: 'Rubik Glitch';
@@ -144,6 +144,23 @@
     height: 100%;
     background: linear-gradient(45deg, #43E97B, #38F9D7);
     border-radius: 30px;
+    padding: 20px;
+    position: relative;
+}
+
+.subscription_text {
+    font-size: 60px;
+    color: white;
+    bottom: 0px;
+    font-size: 40px;
+    
+}
+
+@media screen and (max-width: 992px) {
+    .subscription_text {
+        font-size: 25px;
+
+    }
 }
 
 .workhard {
@@ -323,8 +340,8 @@
     border-radius: 10px;
     position: fixed;
     top: 0;
-    left: 20px;
-    right: 20px;
+    left: 10px;
+    right: 10px;
     z-index: 1000;
     transition: background-color 0.3s ease;
   }
@@ -410,11 +427,12 @@
 
 .category_text {
     color: white;
-    font-size: 20px;
+    font-size: 40px;
 }
 
 @media (max-width: 600px) {
     .category_text {
+        font-size: 20px;
         display: flex;
         justify-content: center;
         border: 2px solid white;

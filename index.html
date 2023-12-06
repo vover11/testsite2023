@@ -9,28 +9,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Rubik+Mono+One&display=swap"
         rel="stylesheet">
+
     <title>Rubi</title>
 </head>
 
 <body class="main">
-    <div class="icon" onclick="toggleNav()">Menu
-        &#9776; <!-- Иконка бургера -->
-    </div>
 
-    <nav>
-        <a href="#home">О нас</a>
-        <a href="#about">Обучение</a>
+    <!-- <nav>
+        <a class="logo" href="#home">RUBIGAMES</a>
+        <a href="#about">О нас</a>
+        <a href="#learn">Обучение</a>
         <a href="#services">Пополнение</a>
         <a href="#contact">Магазин</a>
-    </nav>
+    </nav> -->
+
+    <div class="navbar">
+        <div class="logo">RUBIGAMES</div>
+        <button class="icon" class="toggle-button" onclick="toggleNav()">
+            &#9776; 
+        </button>
+        <ul class="nav-list" id="navList">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </div>
     <section class="profile">
         <div class="container">
             <div class="profile_container">
                 <div class="profile_info" id="balance">
-
+                    <div class="profile_icon">
+                        <img src="images/money_icon.png" alt="" srcset="">
+                    </div>
                 </div>
                 <div class="profile_info" id="nick">
-
+                    <div class="profile_icon">
+                        <img src="images/profile.png" alt="" srcset="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -103,12 +119,9 @@
     </section>
 </body>
 <script>
-    // JavaScript для отображения/скрытия навигационного бара
-    const nav = document.querySelector('nav');
-
-    // Переключение видимости навигационного бара
     function toggleNav() {
-        nav.style.display = (nav.style.display === 'none' || nav.style.display === '') ? 'block' : 'none';
+        var navList = document.getElementById('navList');
+        navList.classList.toggle('show');
     }
 </script>
 

@@ -393,8 +393,8 @@
         width: 100%;
         background-color: #203064;
         border-radius: 10px;
-        transition: background-color 0.3s ease;
-        filter: opacity(90%);
+        /* transition: background-color 0.3s ease;
+        filter: opacity(90%); */
         /* Добавим фильтр прозрачности */
     }
 
@@ -495,7 +495,7 @@
     align-items: center;
     justify-content: space-around;
     padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
 
 .front_face {

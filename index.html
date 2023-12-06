@@ -14,15 +14,6 @@
 </head>
 
 <body class="main">
-
-    <!-- <nav>
-        <a class="logo" href="#home">RUBIGAMES</a>
-        <a href="#about">О нас</a>
-        <a href="#learn">Обучение</a>
-        <a href="#services">Пополнение</a>
-        <a href="#contact">Магазин</a>
-    </nav> -->
-
     <div class="navbar">
         <div class="logo">RUBIGAMES</div>
         <button class="icon" class="toggle-button" onclick="toggleNav()">
@@ -160,8 +151,7 @@
     </section>
 </body>
 <script>
-    function toggleNav() {
-        var navList = document.getElementById('navList');
+    function toggleNav(element) {
         navList.classList.toggle('show');
     }
 </script>
@@ -171,5 +161,4 @@
         element.classList.toggle('clicked');
     }
 </script>
-
 </html>
